@@ -3,3 +3,153 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root {
+    --white: 255, 255, 255;
+	--geist-color-primary-geist-background: #000;
+	--geist-color-primary-accents-1: #111;
+	--geist-color-primary-accents-2: #333;
+	--geist-color-primary-accents-3: #444;
+	--geist-color-primary-accents-4: #666;
+	--geist-color-primary-accents-5: #888;
+	--geist-color-primary-accents-6: #999;
+	--geist-color-primary-accents-7: #eaeaea;
+	--geist-color-primary-accents-8: #fafafa;
+	--geist-foreground: #fff;
+	--geist-purple: #f81ce5;
+	--geist-magenta: #eb367f;
+	--geist-pink: #ff0080;
+	--geist-yellow: #fff500;
+	--ds-gray-100: #1a1a1a;
+	--ds-gray-200: #1f1f1f;
+	--ds-gray-300: #292929;
+	--ds-gray-400: #2e2e2e;
+	--ds-gray-500: #454545;
+	--ds-gray-600: #878787;
+	--ds-gray-700: #8f8f8f;
+	--ds-gray-800: #7d7d7d;
+	--ds-gray-900: #a1a1a1;
+	--ds-gray-1000: #ededed;
+	--ds-blue-100: #0f1c2e;
+	--ds-blue-200: #10233d;
+	--ds-blue-300: #0f2f57;
+	--ds-blue-400: #0d3868;
+	--ds-blue-500: #0a4380;
+	--ds-blue-600: #0090ff;
+	--ds-blue-700: #0072f5;
+	--ds-blue-800: #0062d1;
+	--ds-blue-900: #52a8ff;
+	--ds-blue-1000: #ebf6ff;
+	--ds-red-100: #2a1314;
+	--ds-red-200: #3c1618;
+	--ds-red-300: #561a1e;
+	--ds-red-400: #671e21;
+	--ds-red-500: #832126;
+	--ds-red-600: #e5484d;
+	--ds-red-700: #e5484d;
+	--ds-red-800: #d93036;
+	--ds-red-900: #ff6166;
+	--ds-red-1000: #feecee;
+	--ds-amber-100: #291800;
+	--ds-amber-200: #331b00;
+	--ds-amber-300: #4d2a00;
+	--ds-amber-400: #573300;
+	--ds-amber-500: #6b4105;
+	--ds-amber-600: #e79d13;
+	--ds-amber-700: #ffb224;
+	--ds-amber-800: #ff990a;
+	--ds-amber-900: #ff990a;
+	--ds-amber-1000: #fef3dc;
+	--ds-green-100: #0b2212;
+	--ds-green-200: #0f2e18;
+	--ds-green-300: #12361b;
+	--ds-green-400: #0c451b;
+	--ds-green-500: #126426;
+	--ds-green-600: #1a9338;
+	--ds-green-700: #45a557;
+	--ds-green-800: #398e4a;
+	--ds-green-900: #62c073;
+	--ds-green-1000: #e5fbea;
+	--ds-teal-100: #04201b;
+	--ds-teal-200: #062822;
+	--ds-teal-300: #083a33;
+	--ds-teal-400: #053d35;
+	--ds-teal-500: #085e53;
+	--ds-teal-600: #0c9784;
+	--ds-teal-700: #12a594;
+	--ds-teal-800: #0d8c7d;
+	--ds-teal-900: #0ac7b4;
+	--ds-teal-1000: #e0faf4;
+	--ds-purple-100: #231528;
+	--ds-purple-200: #2e1938;
+	--ds-purple-300: #422154;
+	--ds-purple-400: #4f2768;
+	--ds-purple-500: #5f2e85;
+	--ds-purple-600: #8e4ec6;
+	--ds-purple-700: #8e4ec6;
+	--ds-purple-800: #763da9;
+	--ds-purple-900: #bf7af0;
+	--ds-purple-1000: #f8edfc;
+	--ds-pink-100: #28151d;
+	--ds-pink-200: #3a1726;
+	--ds-pink-300: #4f1c31;
+	--ds-pink-400: #551b33;
+	--ds-pink-500: #6c1e3e;
+	--ds-pink-600: #b21a57;
+	--ds-pink-700: #ea3e83;
+	--ds-pink-800: #df2670;
+	--ds-pink-900: #f75f8f;
+	--ds-pink-1000: #feecf4;
+	--ds-gray-alpha-100: rgba(255, 255, 255, 0.06);
+	--ds-gray-alpha-200: rgba(255, 255, 255, 0.09);
+	--ds-gray-alpha-300: rgba(255, 255, 255, 0.13);
+	--ds-gray-alpha-400: rgba(255, 255, 255, 0.14);
+	--ds-gray-alpha-500: rgba(255, 255, 255, 0.24);
+	--ds-gray-alpha-600: rgba(255, 255, 255, 0.51);
+	--ds-gray-alpha-700: rgba(255, 255, 255, 0.54);
+	--ds-gray-alpha-800: rgba(255, 255, 255, 0.47);
+	--ds-gray-alpha-900: rgba(255, 255, 255, 0.61);
+	--ds-gray-alpha-1000: rgba(255, 255, 255, 0.92);
+	--ds-background-100: #0a0a0a;
+	--ds-background-200: #000;
+	--ds-focus: var(--ds-blue-900);
+	--ds-focus-border: var(--ds-gray-alpha-700);
+	--vaul-overlay-background: #fff;
+	--vaul-overlay-background-end: rgba(0, 0, 0, 0.4);
+	--vaul-overlay-background-start: rgba(0, 0, 0, 0);
+	--geist-color-link-color: var(--geist-color-success-gesit-success-ligh);
+	--geist-color-marketing-gray: var(--geist-color-primary-accents-1);
+
+    --geist-gap-half: 12px;
+}
+.html._dark_theme {
+    --background-outlined-button: var(--ds-background-100);
+    --background-outlined-hover: var(--ds-gray-200);
+    --border-outlined-button: rgb(var(--white), 0.12);
+
+    --background-filled-button: var(--ds-gray-alpha-200);
+    --background-filled-hover: var(--ds-gray-alpha-300);
+
+    --background-ghost-button: var(--ds-gray-1000);
+    --background-ghost-hover: #CCCCCC;
+
+    --color-button: var(--ds-gray-alpha-1000); 
+    --color-button-active: var(--ds-gray-700);
+    color-scheme: dark; 
+    background: var(--vaul-overlay-background-end);
+}
+
+:host, body, html {
+    text-rendering: optimizeLegibility;
+    background-color: var(--ds-background-200);
+    color: var(--ds-gray-1000);
+    scroll-padding-top: 64px;
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+input {
+    outline: none;
+}
