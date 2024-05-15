@@ -1,4 +1,4 @@
-import { ChangeEventHandler, ReactNode } from "react";
+import type { ChangeEvent, ReactNode } from "react";
 
 
 namespace Material {
@@ -11,14 +11,25 @@ namespace Material {
         disibled?: boolean,
     }
     interface InputType {
-        variant?: "filled" | "error",
-        type?: "big" | "normal" | "average" | "small",
-        onChange?: any,
-        disibled?: boolean,
+        $variant: "filled" | "error",
         value?: string | number,
+        $width?:number,
+        $height?:number,
+        $p?:string,
+        name:string,
     }
     interface TypographyType {
         variant: 'web' | 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'body',
         children: number | string
+    }
+}
+
+namespace Auth {
+    type UserType = {
+        email:string,
+        identificator:string,
+        password:string,
+        name:string,
+        date_creat:string,
     }
 }
