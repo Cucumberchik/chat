@@ -5,21 +5,25 @@ import { dencryptionUser, encryptionUser } from "./encryption";
 
 interface AuthType {
     user: null | Auth.UserType,
-    createUser:(obj:Auth.UserType) => void
+    isLoadingGetUser: boolean,
+    user_id:string,
+    createUser:(obj:Auth.UserType) => void,
+    getUser:()=>void
 }
-
+let isId:string = JSON.parse(localStorage.getItem('_isDefic') || 'false')
 
 export const useAuth = create<AuthType>((set)=>({
     user: null,
+    user_id: isId,
+    isLoadingGetUser: true,
     createUser:(obj)=>{
         const postObj = encryptionUser(obj);
-        console.log('Ecryption',postObj);
         const getObj = dencryptionUser(postObj);
-
-        console.log('decryption',getObj);
-        console.log('original',obj);
-
-
-        
+    },
+    getUser:()=>{
+        set({isLoadingGetUser: true});
+        if(isId == "false"){
+            set({isLoadingGetUser: false});
+        }
     }
 }))
