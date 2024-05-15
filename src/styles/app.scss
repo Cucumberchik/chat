@@ -1,9 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+	font-family: var(--font-femely);
 }
 :root {
+	--font-femely: "IBM Plex Sans", sans-serif;;
     --white: 255, 255, 255;
 	--geist-color-primary-geist-background: #000;
 	--geist-color-primary-accents-1: #111;
