@@ -1,6 +1,6 @@
 'use client'
 import styled from '@emotion/styled'
-import { Material } from '~/types/matial-components'
+import { Material } from 'source/types/matial-components'
 
 
     let style:any = {
@@ -21,7 +21,7 @@ const Input = styled.input<Material.InputType>`
     box-shadow: 0 0 0 1px ${({$variant})=>style[$variant].bx};
     border: ${({$variant})=>style[$variant].br};
     &:focus{
-    box-shadow: 0 0 0 1px ${({$variant})=>style[$variant].fc};
+        box-shadow: 0 0 0 1px ${({$variant})=>style[$variant].fc};
 
     }
 `

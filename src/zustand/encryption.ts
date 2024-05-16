@@ -1,4 +1,4 @@
-import { Auth } from "~/types/matial-components";
+import { Auth } from "source/types/matial-components";
 import { symbolEncryption } from "./code";
 
 function encryption(str:string):string {
@@ -13,7 +13,7 @@ function encryption(str:string):string {
     return result.join('');
 
 }
-function decryption(str:string):string {
+export function decryption(str:string):string {
     let symbolEncryptionValueArray:string[] = Object.values(symbolEncryption);
     let symbolEncryptionKeyArray:string[] = Object.keys(symbolEncryption)
 
@@ -29,6 +29,7 @@ export function encryptionUser(obj:Auth.UserType):Auth.UserType {
         identificator:encryption(obj.identificator),
         password:encryption(obj.password),
         date_creat:encryption(obj.date_creat),
+        role:encryption(obj.role),
     }
 }
 export function dencryptionUser(obj:Auth.UserType):Auth.UserType {
@@ -38,5 +39,7 @@ export function dencryptionUser(obj:Auth.UserType):Auth.UserType {
         identificator: decryption(obj.identificator),
         password: decryption(obj.password),
         date_creat: decryption(obj.date_creat),
+        role:decryption(obj.role),
+
     }
 }

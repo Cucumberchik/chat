@@ -1,7 +1,7 @@
 "use client"
 import styled from "@emotion/styled"
 import {FC} from 'react'
-import { Material } from '~/types/matial-components'
+import { Material } from 'source/types/matial-components'
 
 type PaddingTypeOrFZ = {
     big:string,
@@ -20,8 +20,9 @@ const Button:FC<Material.ButtonType> = ({
     variant = "filled",
     onClick, className = "button", 
     children,
-    type = "normal",
-    disibled
+    size = "normal",
+    disibled,
+    type
 }) => {
 
     const padding:PaddingTypeOrFZ = {
@@ -60,7 +61,7 @@ const Button:FC<Material.ButtonType> = ({
 
     const ButtonStyle = styled.button`
         transition: .2s ;
-        padding: ${padding[type]};
+        padding: ${padding[size]};
         color: var(--color-button);
         ${style[variant]};
 
@@ -71,7 +72,7 @@ const Button:FC<Material.ButtonType> = ({
     `;
 
   return (
-    <ButtonStyle disabled={disibled} >
+    <ButtonStyle type={type} disabled={disibled} >
         {children}
     </ButtonStyle>
   )
