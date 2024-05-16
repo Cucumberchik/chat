@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
-import '~/styles/app.scss'
+import 'source/styles/app.css'
 
 export const metadata: Metadata = {
   title: "Chat App",
@@ -16,5 +16,5 @@ export default function RootLayout({
     <html className="html _dark_theme" lang="en">
       <body >{children}</body>
     </html>
-  );
+  )
 }

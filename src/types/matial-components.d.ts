@@ -4,19 +4,18 @@ import type { ChangeEvent, ReactNode } from "react";
 namespace Material {
     interface ButtonType {
         variant?: "filled" | "outlined" | "ghost",
-        type?: "big" | "normal" | "average" | "small",
+        size?: "big" | "normal" | "average" | "small",
         onClick?: () => void,
         className?: string,
         children?: ReactNode,
         disibled?: boolean,
+        type?:any
     }
     interface InputType {
         $variant: "filled" | "error",
-        value?: string | number,
         $width?:number,
         $height?:number,
         $p?:string,
-        name:string,
     }
     interface TypographyType {
         variant: 'web' | 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'body',
@@ -31,5 +30,6 @@ namespace Auth {
         password:string,
         name:string,
         date_creat:string,
+        role: string,
     }
 }

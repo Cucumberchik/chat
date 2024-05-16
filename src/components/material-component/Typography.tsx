@@ -20,22 +20,22 @@ import { Material } from "~/types/matial-components"
         font: ${fz[variant]} var(--font-femely);
     `
     let H2 = styled.h2`
-    font: ${fz[variant]} var(--font-femely);
+        font: ${fz[variant]} var(--font-femely);
     `
     let H3 = styled.h3`
         font: ${fz[variant]} var(--font-femely);
     `
     let H4 = styled.h4`
-    font: ${fz[variant]} var(--font-femely);
+        font: ${fz[variant]} var(--font-femely);
     `
     let H5 = styled.h5`
         font: ${fz[variant]} var(--font-femely);
     `
     let H6 = styled.h6`
-    font: ${fz[variant]} var(--font-femely);
+        font: ${fz[variant]} var(--font-femely);
     `
     let Body = styled.span`
-    font: ${fz[variant]} var(--font-femely);
+        font: ${fz[variant]} var(--font-femely);
     `
     switch(variant){
         case "h1": return <H1>{children}</H1>;
